@@ -2,11 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js"
-  },
+    "build": "cd ../client && npm run build",
+    "install-client": "cd ../client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node client.js",
+    "watch": "nodemon server.js",
+    "client": "cd ../client && npm start",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client"
+    },
   "author": "Serge KOUVAHE, Thomas BLERVAQUES",
   "license": "ISC",
   "dependencies": {
