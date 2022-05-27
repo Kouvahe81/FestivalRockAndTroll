@@ -1,0 +1,22 @@
+Pour le backend
+    "bcrypt",
+    "build",
+    "cors",
+    "cross-env",
+    "dotenv"",
+    "express",
+    "html-webpack-plugin",
+    "jsonwebtoken",
+    "mongoose",
+    "multer",
+    "nodemon",
+    "start",
+    "webpack"
+
+
+Pour le frontend
+    "react-router-dom",
+    "axios",
+    "bootstrap"
+    "reactstrap"
+    "uuid"
